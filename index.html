@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <h1 id="title">Generate a <br><span style="color:#4adf86;">random password</span></h1>
+        <p id="subtext">Never use an insecure password again.</p>
+
+        <button onclick="generatePassword()">Generate passwords</button>
+        <br>
+        <label class="switch">
+            <input type="checkbox" id="mySwitch" onclick="toggleSwitch()" checked>
+            <!-- <span class="slider"></span> -->
+            symbols and numbers
+        </label>
+        <hr class="solid">
+        <div class="password-section">
+            <div class="password-shelf" id="password-shelf-1" onclick="copyText(this)">Waiting for generate</div>
+            <div class="password-shelf" id="password-shelf-2" onclick="copyText(this)">Waiting for generate</div>
+        </div>
+        <p id="tips"></p>
+        <script src="index.js"></script>
+    </div>
+
+</body>
+
+</html>
